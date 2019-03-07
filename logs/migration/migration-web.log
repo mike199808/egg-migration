@@ -1,0 +1,60 @@
+2019-03-07 22:18:20,840 INFO 1128 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-07 22:19:41,468 ERROR 1128 [-/127.0.0.1/-/7ms GET /users/create?name=xioaming&age=18] nodejs.TypeError: Cannot read property 'findById' of undefined
+    at UserController.show (C:\Users\Administrator\Desktop\egg-migration\egg-migration\app\controller\users.js:14:37)
+    at Object.callFn (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+
+pid: 1128
+hostname: SC-201803310101
+
+2019-03-07 22:21:38,941 INFO 7988 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-07 22:22:57,872 INFO 11276 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-07 22:22:59,563 ERROR 11276 [-/127.0.0.1/-/12ms GET /users/create?name=xioaming&age=18] nodejs.TypeError: Cannot read property 'create' of undefined
+    at UserController.create (C:\Users\Administrator\Desktop\egg-migration\egg-migration\app\controller\users.js:20:39)
+    at Object.callFn (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-core\lib\utils\index.js:44:21)
+    at Object.classControllerMiddleware (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-core\lib\loader\mixin\controller.js:87:20)
+    at Object.callFn (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\utils.js:12:21)
+    at wrappedController (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\egg_router.js:322:18)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:44:32)
+    at next (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:45:18)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\router.js:190:18
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:44:32)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa-compose\index.js:36:12
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\@eggjs\router\lib\router.js:195:33)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-development\app\middleware\egg_loader_trace.js:9:56
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at i18n (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-i18n\app\middleware\i18n.js:13:12)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\koa\node_modules\koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at dta (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\dta.js:12:12)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xframe (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\xframe.js:7:11)
+    at dispatch (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\node_modules\koa-compose\index.js:42:32)
+    at xssProtection (C:\Users\Administrator\Desktop\egg-migration\egg-migration\node_modules\egg-security\lib\middlewares\xssProtection.js:7:11)
+
+pid: 11276
+hostname: SC-201803310101
+
+2019-03-07 22:23:48,730 INFO 1076 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-07 22:25:48,481 INFO 15264 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2019-03-07 22:26:06,274 INFO 15264 [egg-sequelize](191ms) Executed (default): INSERT INTO `users` (`id`,`created_at`,`updated_at`) VALUES (DEFAULT,'2019-03-07 14:26:06','2019-03-07 14:26:06');
